@@ -21,6 +21,7 @@
     "copy-to-clipboard": "^3.2.1",
     "emotion": "^10.0.23",
     "next": "^10.2.0",
+    "next-remote-watch": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rehype": "^11.0.0",
@@ -68,7 +69,7 @@
     "refresh": "yarn clean && yarn",
     "task": "ts-node tasks",
     "spellcheck": "cspell 'docs/**/*.md'",
-    "dev": "next dev",
+    "dev": "next-remote-watch ./src/fragments",
     "export": "yarn task patch-next-scrolling && next build && next export -o client/www/next-build",
     "next-build": "next build",
     "next-start": "next start"
